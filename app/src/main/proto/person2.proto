@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package tm;
+//option java_package="tm";
+//option java_outer_classname="Person2";
+
+import "person.proto"; // 导入类。同java，可导入多个
+
+message Person2{
+  Person child = 1; // 声明指定类数据类型的属性
+}

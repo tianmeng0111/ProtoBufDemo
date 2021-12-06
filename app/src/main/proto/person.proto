@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package tm;
+//option java_outer_classname = "Person";
+
+message Person{
+
+  // 枚举 声明国籍
+  enum Country {
+    China = 0; // 第一个的唯一标识必须是0
+    USA = 1;
+    France = 2;
+  }
+
+  // 内部类 声明职业
+  message Profession {
+    string name = 1;
+    string company = 2;
+  }
+
+  Country country = 5; // 定义国籍属性，唯一标识1。并非指定了此属性为“USA”，实际默认是0-“China”
+  Profession prof = 4; // 定义职业属性
+
+  string name = 6;
+  string email = 1;
+  int32 id = 2;
+}

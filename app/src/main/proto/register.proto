@@ -1,0 +1,36 @@
+syntax = "proto3";
+//生成的java类所在的包名
+package tm;
+//option java_outer_classname = "RegisterProtoCreator";
+
+message RegisterRequest {
+  string username = 1;
+  int32 age = 2;
+  // proto3中修饰符是不可显示指定的，因为默认都是optional(可选)
+
+  /**
+  ptoto类型   java类型
+  double     double
+  float      float
+  int32      int
+  int64      long
+  uint32     int[注]
+  uint64     long[注]
+  sint32     int
+  sint64     long
+  fixed32    int[注]
+  fixed64    long[注]
+  sfixed32   int
+  sfixed64   long
+  bool       boolean
+  string     String
+  bytes      ByteString
+
+  属性的默认值:
+  对于字符串，默认值为空字符串。
+  对于字节，默认值为空字节。
+  对于bools，默认值为false。
+  对于数字类型，默认值为零。
+  对于枚举，默认值为第一个定义的枚举值，它必须为0。
+   */
+}
