@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
                 /**
                  * 对于protobuf使用
                  */
-                LoginRequestOuterClass.LoginRequest.Builder builder = LoginRequestOuterClass.LoginRequest.newBuilder();
+                LoginRequestOuterClass.LoginRequest.Builder
+                        builder = LoginRequestOuterClass.LoginRequest.newBuilder();
                 builder.setUsername("username");
                 builder.setPwd("password");
                 LoginRequestOuterClass.LoginRequest build = builder.build();
